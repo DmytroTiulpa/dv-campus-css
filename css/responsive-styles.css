@@ -1,0 +1,353 @@
+/* General styles */
+body {
+    background-color: darkgray;
+    font-family: Verdana, Arial, Helvetica, sans-serif; /* Рубленый шрифт заголовка */
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center; /*For IE6 Shenanigans*/
+}
+
+.wrapper {
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+    max-width: 768px;
+    background-color: white;
+    /*max-width: 479px;*/
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 235px;
+    position: relative;
+}
+header div.logo {
+    font-size: 60px;
+}
+header i {
+    color: #f36b47;
+    margin: 15px;
+    position: absolute;
+    right: 5px;
+    top: 0px
+}
+
+nav.medium {
+    display: none;
+}
+
+.thumb {
+    background-color: #eeeeee;
+    border: 1px solid #d5d4d3;
+    box-shadow: 0 7px 13px rgba(0, 0, 0, 0.16);
+    margin: 0 110px 58px;
+}
+.thumb img {
+    max-width: 100%;
+    height: auto;
+}
+.thumb h3 {
+    border-bottom: 1px solid #d5d4d3;
+    color: #fe5c32;
+    font-size: 1.4rem;
+    margin: 0 5px;
+    padding: 0 0 5px 0;
+}
+.thumb p {
+    color: #605f5f;
+    margin: 7px !important;
+}
+
+
+#ui {
+    border-bottom: 8px solid #f36b47;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 50px 30px 30px 30px;
+}
+
+#advantages {
+    border-bottom: 8px solid #f36b47;
+    font-size: 15px;
+    line-height: 23px;
+    padding: 50px 0;
+}
+#advantages ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#advantages ul li {
+    flex: 1 0 100%;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+#advantages ul li img {
+    max-width: 100%;
+}
+#advantages ul li article {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 320px;
+}
+
+#portfolio {
+    padding: 90px 0;
+}
+#portfolio p {
+    margin: 0 55px 90px;
+}
+#portfolio ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#portfolio ul li {
+    flex: 1 0 100%;
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+#portfolio ul li img {
+    max-width: 100%;
+}
+#portfolio ul li div {
+    margin:  0 auto;
+    text-align: center;
+    max-width: 250px;
+}
+
+#talk {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 90px 25px;
+}
+
+#contact {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 50px 25px 90px 25px;
+}
+
+#map {
+    padding: 0;
+}
+
+#form {
+    padding: 80px 0 150px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+}
+
+.orange * {
+    background-color: #f36b47;
+    color: white;
+}
+.orange p {
+    padding: 15px 18px 16px;
+}
+
+/* ----------------------------------- */
+/* ----------- For TABLETS ----------- */
+/* ----------------------------------- */
+
+@media screen and (min-width: 540px) {
+    header {
+        height: 85px;
+    }
+    nav.small {
+        display: none;
+    }
+
+    nav.medium {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 16px;
+        /*padding: 10px;*/
+    }
+
+    nav.medium > div.logo {
+        font-size: 26px;
+        font-weight: bolder;
+        line-height: 26px;
+        margin: 0 20px 0 10px;
+    }
+
+    nav.medium ul li {
+        /*border-bottom: 2px solid #f36b47;*/
+        display: inline;
+        font-size: 12px;
+        font-weight: bolder;
+        margin: 0px 10px;
+        /*padding-bottom: 3px;*/
+        text-transform: uppercase;
+    }
+    nav.medium ul li.active {
+        border-bottom: 2px solid #f36b47;
+        padding-bottom: 3px;
+    }
+
+    #ui {
+        border-bottom: 0px solid #f36b47;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 50px 90px 30px 90px;
+    }
+
+    #advantages {
+        border-bottom: 0px solid #f36b47;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 50px 0;
+    }
+    #advantages ul li {
+        flex-basis: 50%;
+    }
+    #advantages ul li article {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 250px;
+    }
+
+    #portfolio  {
+        padding: 0 90px 50px 90px;
+    }
+    #portfolio p {
+        margin: 0 0 45px;
+    }
+    #portfolio ul li {
+        flex-basis: 50%;
+    }
+    #portfolio ul li {
+        margin-bottom: 50px;
+    }
+
+    #talk {
+        padding: 90px 90px 60px 90px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    #contact {
+        padding: 80px 90px 30px 90px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    #contact button {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    #map {
+        padding: 0 100px;
+    }
+
+    #form {
+        padding: 80px 90px 125px 90px;
+    }
+
+    .orange p {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 35px 80px;
+    }
+    .orange a {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+}
+
+
+
+
+.slider {
+    background-image: url('../images/slideshow.jpg');
+    background-size: cover; 
+    height: 335px;
+}
+.slider div {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider p {
+    color: white;
+    line-height: 35px;
+}
+.slider p > span {
+    background: rgba(0,0,0,0.4);
+    font-weight: bold;
+    padding: 5px 20px;
+}
+.slider > div > i {
+    color: #f36b47;
+    margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2e2e2e;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 12px 0;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 50px;   
+}
+h2 {
+    border-bottom: 3px solid #f36b47;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 0 15px;
+    padding: 0 0 5px;
+}
+h3 {
+    font-size: 1.3rem;
+}
+p, table {
+    color: #9d9c9c;
+}
+table {
+    font-size: 1.2rem;
+    margin: 12px 20px;
+    text-align: left;
+    width: 100%;
+}
+td {
+    padding: 20px 30px;
+}
+
+form {
+    align-content: center;
+}
+input, textarea {
+    background-color: #eeeeee;
+    border: 1px solid #d5d4d3;
+    border-radius: 4px;
+    margin: 0 10px 5px;
+    padding: 10px 10px 12px;
+    width: calc(100% - 42px);
+}
+button {
+    background-color: #f36b47;
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 10px 12px;
+    width: 70%;
+}
