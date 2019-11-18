@@ -31,21 +31,6 @@ module.exports = function(grunt) {
             }
         },
 
-        cssmin: {
-            options: {
-                mergeIntoShorthands: false,
-                roundingPrecision: -1
-            },
-            target: {
-                files: {
-                    'pub/css/responsive-styles.min.css': [
-                        'assets/dist/css/reset.css',
-                        'assets/dist/css/responsive-styles-processed.css'
-                    ]
-                }
-            }
-        },
-
         postcss: {
             dev: {
                 options: {
@@ -53,10 +38,11 @@ module.exports = function(grunt) {
                     processors: [
                         require('autoprefixer')({
                             overrideBrowserslist: ['last 2 versions',  'ie 11']
-                        })
+                        }),
+                        require('cssnano')()
                     ]
                 },
-                src: 'pub/css/responsive-styles.css',
+                src: 'assets/dist/css/responsive-styles.css',
                 dest: 'pub/css/responsive-styles.min.css'
             },
             prod: {
@@ -92,23 +78,21 @@ module.exports = function(grunt) {
                 files: ['pub/css/*.min.css'],
                 options: {
                     livereload: true,
-                },
+                }
             },
             imagemin: {
                 files: 'assets/dist/images/**/*.{png,jpg,gif}',
                 tasks: ['imagemin']
-            },
+            }
         }
-
     });
 
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-postcss');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['less:prod', 'postcss:prod', 'cssmin', 'imagemin']);
+    grunt.registerTask('default', ['less:prod', 'postcss:prod', 'imagemin']);
     grunt.registerTask('dev', ['less:dev', 'postcss:dev', 'imagemin', 'watch']);
 
 };
