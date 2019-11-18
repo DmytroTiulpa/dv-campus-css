@@ -1,3 +1,4 @@
+/* Buttons */
 /* General styles */
 body {
   background-color: darkgray;
@@ -47,7 +48,7 @@ nav.medium {
 }
 .thumb h3 {
   border-bottom: 1px solid #d5d4d3;
-  color: #fe5c32;
+  color: #f36b47;
   font-size: 1.4rem;
   margin: 0 5px;
   padding: 0 0 5px 0;
