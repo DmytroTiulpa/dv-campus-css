@@ -1,13 +1,12 @@
 /* General styles */
 body {
   background-color: darkgray;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  /* Рубленый шрифт заголовка */
+  font-family: Verdana, Arial, Helvetica, sans-serif; /* Рубленый шрифт заголовка */
   font-size: 14px;
   line-height: 20px;
-  text-align: center;
-  /*For IE6 Shenanigans*/
+  text-align: center; /*For IE6 Shenanigans*/
 }
+
 .wrapper {
   /*border: 1px solid black;*/
   margin: 0 auto;
@@ -15,6 +14,7 @@ body {
   background-color: white;
   /*max-width: 479px;*/
 }
+
 header {
   display: flex;
   justify-content: center;
@@ -30,11 +30,13 @@ header i {
   margin: 15px;
   position: absolute;
   right: 5px;
-  top: 0px;
+  top: 0px
 }
+
 nav.medium {
   display: none;
 }
+
 .thumb {
   background-color: #eeeeee;
   border: 1px solid #d5d4d3;
@@ -56,12 +58,15 @@ nav.medium {
   color: #605f5f;
   margin: 7px !important;
 }
+
+
 #ui {
   border-bottom: 8px solid #f36b47;
   font-size: 16px;
   line-height: 24px;
   padding: 50px 30px 30px 30px;
 }
+
 #advantages {
   border-bottom: 8px solid #f36b47;
   font-size: 15px;
@@ -86,6 +91,7 @@ nav.medium {
   text-align: center;
   max-width: 320px;
 }
+
 #portfolio {
   padding: 90px 0;
 }
@@ -106,30 +112,39 @@ nav.medium {
   max-width: 100%;
 }
 #portfolio ul li div {
-  margin: 0 auto;
+  margin:  0 auto;
   text-align: center;
   max-width: 250px;
 }
+
 #talk {
   font-size: 16px;
   line-height: 24px;
   padding: 90px 25px;
 }
+
 #contact {
   font-size: 16px;
   line-height: 24px;
   padding: 50px 25px 90px 25px;
 }
+
 #map {
   padding: 0;
 }
+
 #form {
   padding: 80px 0 150px 0;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
+footer {
+}
+
 .orange * {
   background-color: #f36b47;
   color: white;
@@ -137,9 +152,11 @@ img {
 .orange p {
   padding: 15px 18px 16px;
 }
+
 /* ----------------------------------- */
 /* ----------- For TABLETS ----------- */
 /* ----------------------------------- */
+
 @media screen and (min-width: 540px) {
   header {
     height: 85px;
@@ -147,6 +164,7 @@ img {
   nav.small {
     display: none;
   }
+
   nav.medium {
     display: flex;
     justify-content: space-between;
@@ -154,12 +172,14 @@ img {
     line-height: 16px;
     /*padding: 10px;*/
   }
+
   nav.medium > div.logo {
     font-size: 26px;
     font-weight: bolder;
     line-height: 26px;
     margin: 0 20px 0 10px;
   }
+
   nav.medium ul li {
     /*border-bottom: 2px solid #f36b47;*/
     display: inline;
@@ -173,12 +193,14 @@ img {
     border-bottom: 2px solid #f36b47;
     padding-bottom: 3px;
   }
+
   #ui {
     border-bottom: 0px solid #f36b47;
     font-size: 14px;
     line-height: 20px;
     padding: 50px 90px 30px 90px;
   }
+
   #advantages {
     border-bottom: 0px solid #f36b47;
     font-size: 12px;
@@ -193,7 +215,8 @@ img {
     text-align: center;
     max-width: 250px;
   }
-  #portfolio {
+
+  #portfolio  {
     padding: 0 90px 50px 90px;
   }
   #portfolio p {
@@ -205,27 +228,33 @@ img {
   #portfolio ul li {
     margin-bottom: 50px;
   }
+
   #talk {
     padding: 90px 90px 60px 90px;
     font-size: 12px;
     line-height: 20px;
   }
+
   #contact {
     padding: 80px 90px 30px 90px;
     font-size: 12px;
     line-height: 20px;
   }
+
   #contact button {
     display: block;
     margin: 0 auto;
     width: 50%;
   }
+
   #map {
     padding: 0 100px;
   }
+
   #form {
     padding: 80px 90px 125px 90px;
   }
+
   .orange p {
     font-size: 18px;
     line-height: 22px;
@@ -235,7 +264,12 @@ img {
     font-size: 20px;
     line-height: 22px;
   }
+
 }
+
+
+
+
 .slider {
   background-image: url('../images/slideshow.jpg');
   background-size: cover;
@@ -254,7 +288,7 @@ img {
   line-height: 35px;
 }
 .slider p > span {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0,0,0,0.4);
   font-weight: bold;
   padding: 5px 20px;
 }
@@ -262,12 +296,8 @@ img {
   color: #f36b47;
   margin: 10px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+h1, h2, h3, h4, h5, h6 {
   color: #2e2e2e;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   margin: 12px 0;
@@ -289,8 +319,7 @@ h2 {
 h3 {
   font-size: 1.3rem;
 }
-p,
-table {
+p, table {
   color: #9d9c9c;
 }
 table {
@@ -302,11 +331,11 @@ table {
 td {
   padding: 20px 30px;
 }
+
 form {
   align-content: center;
 }
-input,
-textarea {
+input, textarea {
   background-color: #eeeeee;
   border: 1px solid #d5d4d3;
   border-radius: 4px;
